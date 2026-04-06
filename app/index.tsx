@@ -1,11 +1,15 @@
-import { Text, View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { Text } from "react-native";
 
 export default function Index() {
   return (
-    <View className="flex-1">
-      <View className="absolute bottom-6 right-6 bg-blue-500 p-4 rounded-full shadow-lg">
-        <Text className="text-white">+</Text>
-      </View>
-    </View>
+    <LinearGradient
+      colors={["#06b6d4", "#3b82f6"]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 0 }}
+      className="p-4 rounded-lg"
+    >
+      <Text className="text-white text-center">Horizontal Gradient</Text>
+    </LinearGradient>
   );
 }
