@@ -1,11 +1,11 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View className="relative h-40">
-      <View className="absolute inset-0 bg-red-300 z-30" />
-
-      <View className="absolute inset-0 bg-blue-300 z-20" />
+    <View className="relative w-16 h-16 bg-gray-300 rounded-full">
+      <View className="absolute top-0 right-0 bg-red-500 w-5 h-5 rounded-full justify-center items-center">
+        <Text className="text-white text-xs">3</Text>
+      </View>
     </View>
   );
 }
