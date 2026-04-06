@@ -1,17 +1,12 @@
-import { ScrollView, Text, View } from "react-native";
+import { BlurView } from "expo-blur";
+import { Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <ScrollView className="flex-1 bg-gray-100 p-4">
-      <View className="space-y-4">
-        <View className="bg-white p-4 rounded-lg">
-          <Text>Card 1</Text>
-        </View>
-
-        <View className="bg-white p-4 rounded-lg">
-          <Text>Card 2</Text>
-        </View>
-      </View>
-    </ScrollView>
+    <View className="flex-1 justify-center items-center bg-gray-300">
+      <BlurView intensity={60} tint="light" className="p-6 rounded-xl">
+        <Text className="text-black font-semibold">Glass Effect</Text>
+      </BlurView>
+    </View>
   );
 }
