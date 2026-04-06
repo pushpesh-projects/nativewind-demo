@@ -4,12 +4,10 @@ import { Text } from "react-native";
 export default function Index() {
   return (
     <LinearGradient
-      colors={["#06b6d4", "#3b82f6"]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 0 }}
-      className="p-4 rounded-lg"
+      colors={["#22c55e", "#16a34a"]}
+      className="p-4 rounded-full"
     >
-      <Text className="text-white text-center">Horizontal Gradient</Text>
+      <Text className="text-white text-center font-semibold">Continue</Text>
     </LinearGradient>
   );
 }
