@@ -1,12 +1,12 @@
-import { BlurView } from "expo-blur";
 import { Text, View } from "react-native";
+import ProfileCard from "./Profile";
 
-export default function Index() {
+export default function Home() {
   return (
-    <View className="flex-1 justify-center items-center bg-gray-300">
-      <BlurView intensity={60} tint="light" className="p-6 rounded-xl">
-        <Text className="text-black font-semibold">Glass Effect</Text>
-      </BlurView>
+    <View className="bg-gray-200 rounded-lg m-20">
+      <ProfileCard name="Pushpesh" age={30}>
+        <Text>Frontend Developer</Text>
+      </ProfileCard>
     </View>
   );
 }
