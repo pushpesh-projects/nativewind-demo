@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
-import ProfileCard from "./Profile";
+import ProfileCard from "../components/ProfileCard";
 
 type User = {
   name: string;
